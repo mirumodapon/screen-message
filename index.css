@@ -1,0 +1,78 @@
+
+body, main {
+  width: 100vw;
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  overflow: hidden;
+}
+
+main > textarea {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  font-family: sans;
+  padding:0px;
+  margin:0px;
+  border:0px;
+  text-align:center;
+  overflow:hidden;
+  resize:none;
+}
+
+main > textarea:focus {
+  outline: none;
+}
+
+main > span {
+  position:absolute;
+  visibility:hidden;
+  top:0px;
+  left:0px;
+  font-size:30px;
+  white-space:pre;
+  font-family: sans;
+  border:0px;
+  padding:0.1em;
+  margin:0px;
+}
+
+#setting {
+  position:absolute;
+  bottom: 0px;
+  right: 0px;
+
+  opacity: 0;
+}
+
+#setting:hover {
+  opacity: 1;
+}
+
+#setting .toolkit {
+  width: max-content;
+  height: max-content;
+  padding: 3px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+#setting .toolkit * {
+  display: block;
+
+  width: 30px;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 1;
+
+  cursor: pointer;
+}
